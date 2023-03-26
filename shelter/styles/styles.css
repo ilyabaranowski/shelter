@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Georgia";
+    src: url("../assets/fonts/georgia/Georgia.woff2") format('woff2'),
+    url("../assets/fonts/georgia/Georgia.woff") format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Arial";
+    src: url("../assets/fonts/arial/ArialMT.woff2") format('woff2'),
+    url("../assets/fonts/arial/ArialMT.woff") format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #F1CDB3;
+    --dark: #292929;
+    --primary-light: #FDDCC4;
+}
+
+
+body {
+    font-family: 'Georgia', sans-serif;
+    /*font-family: 'Arial', sans-serif;*/
+    font-size: 16px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.header,
+.heading-block,
+.footer {
+    background: url(../assets/img/start-screen-background.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211F20;
+    background-position-x: center;
+    background-position-y: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 80%;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+h3{
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+h4{
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 90px;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-text {
+    position: relative;
+    margin-right: 573px;
+    width: 184px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: start;
+    color: var(--primary);
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.logo-text-small {
+    font-size: 13px;
+    color: #CDCDCD;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+.burger-menu-icons {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 28px;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #CDCDCD;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.2s;
+}
+
+.header-nav-container li:hover a {
+    border-bottom: 3px solid var(--primary);
+}
+
+.burger-menu-btn {
+    display: none;
+}
+
+.heading-block {
+    height: 818px;
+    padding-top: 90px;
+}
+.heading-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heading {
+    font-size: 44px;
+    color: #FFF;
+    width: 310px;
+    padding-top: 163px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    line-height: 57px;
+    text-align: start;
+}
+
+.heading-text {
+    width: 460px;
+}
+
+.heading-text-small {
+    font-size: 15px;
+    color: #CDCDCD;
+    width: 460px;
+    padding-top: 42px;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+    font-family: 'Arial', sans-serif;
+}
+
+.primary-btn {
+    display: block;
+    width: 207px;
+    line-height: 52px;
+    border-radius: 25px;
+    background: var(--primary);
+    color: var(--dark);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.primary-btn:active {
+    background: var(--primary-light);
+}
+
+.make-friend-btn {
+    margin-top: 42px;
+}
+
+.heading-img {
+    background: url("../assets/img/start-screen-puppy.png") no-repeat;
+    width: 56%;
+    height: 100%;
+}
