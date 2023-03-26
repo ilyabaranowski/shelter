@@ -219,7 +219,6 @@ ul {
 
 .primary-btn {
     display: block;
-    width: 207px;
     line-height: 52px;
     border-radius: 25px;
     background: var(--primary);
@@ -229,6 +228,7 @@ ul {
     font-weight: 400;
     font-size: 17px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .primary-btn:active {
@@ -237,6 +237,7 @@ ul {
 
 .make-friend-btn {
     margin-top: 42px;
+    width: 207px;
 }
 
 .heading-img {
@@ -300,4 +301,108 @@ ul {
     line-height: 24px;
     text-align: start;
     font-family: 'Arial', sans-serif;
+}
+
+.pets-block {
+    height: 877px;
+    padding-top: 80px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pets-container {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.pets-text {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    color: #545454;
+}
+
+.slide-container {
+    position: relative;
+    padding-top: 60px;
+    width: 990px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slide {
+    position: relative;
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 435px;
+    column-gap: 90px;
+    /*row-gap: 20px;*/
+}
+
+.pets-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: #FAFAFA;
+    transition: all 0.3s;
+}
+
+.animal-name {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #545454;
+}
+
+.animal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pets-button {
+    background: #FAFAFA;
+    border: 2px solid var(--primary);
+    width: 187px;
+    height: 52px;
+}
+
+.get-know-rest {
+    margin-top: 60px;
+    width: 261px;
+    height: 52px;
+}
+
+.pets-slider-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 2px solid var(--primary);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center center;
+}
+
+.btn-left {
+    top: 46.1%;
+    left: -8.9%;
+    background-image:url("/assets/icons/Arrow-left.svg");
+}
+
+.btn-right {
+    top: 46.1%;
+    right: -8.9%;
+    background-image:url("/assets/icons/Arrow-right.svg");
 }
