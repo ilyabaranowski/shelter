@@ -319,7 +319,8 @@ ul {
     text-align: center;
 }
 
-.pets-text {
+.pets-text,
+.help-text {
     font-weight: 400;
     font-size: 35px;
     line-height: 45px;
@@ -396,13 +397,58 @@ ul {
 }
 
 .btn-left {
-    top: 46.1%;
+    top: 41.1%;
     left: -8.9%;
     background-image:url("/assets/icons/Arrow-left.svg");
 }
 
 .btn-right {
-    top: 46.1%;
+    top: 41.1%;
     right: -8.9%;
     background-image:url("/assets/icons/Arrow-right.svg");
+}
+
+.help-block {
+    height: 611px;
+    padding-top: 80px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-container {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.howto-help-first {
+    position: relative;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 82px 150px 60px 153px 101px;
+    grid-template-rows: 113px;
+    column-gap: 120px;
+    row-gap: 55px;
+}
+
+.howto-help-last {
+    position: relative;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 89px 101px 165px 143px;
+    grid-template-rows: 113px;
+    column-gap: 120px;
+    row-gap: 55px;
+    justify-content: center;
+}
+
+.action-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #545454;
 }
