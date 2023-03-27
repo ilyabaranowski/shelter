@@ -456,7 +456,6 @@ ul {
     height: 462px;
     padding-top: 80px;
     background: #F6F6F6;
-
 }
 
 .donation-container {
@@ -529,4 +528,107 @@ ul {
     line-height: 18px;
     font-weight: 400;
     color: #B2B2B2;
+}
+
+.footer-block {
+    height: 350px;
+    padding-top: 40px;
+}
+
+.footer-container {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-img {
+    background: url("../assets/img/footer-puppy.png") no-repeat;
+    width: 29%;
+}
+
+.contact-text,
+.locations-text {
+    color: #FFFFFF;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.contact-name,
+.location-name {
+    color: #F1CDB3;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+/*span.contact-name:nth-child(2) {*/
+/*    display: inline-block;*/
+/*    padding-top: 40px;*/
+/*}*/
+
+/*span.location-name:nth-child(2) {*/
+/*    display: inline-block;*/
+/*    padding-top: 33px;*/
+/*}*/
+
+.contact-item {
+    padding-top: 40px;
+}
+
+.locations-item {
+    padding-top: 33px;
+}
+
+.contact-link {
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locations-link {
+    width: 302px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-name {
+    width: 75%;
+}
+
+.location-name {
+    width: 87%;
+}
+
+.contact-icon,
+.location-icon {
+    display: inline-block;
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email-icon {
+    background-image: url(../assets/icons/icon-email.svg);
+    height: 32px;
+    width: 40px;
+}
+
+.tel-icon {
+    background-image: url(../assets/icons/icon-phone.svg);
+    height: 32px;
+    width: 40px;
+}
+
+.geo-icon {
+    background-image: url(../assets/icons/icon-marker.svg);
+    height: 32px;
+    width: 22px;
 }
