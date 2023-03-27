@@ -343,7 +343,6 @@ ul {
     grid-template-columns: 270px 270px 270px;
     grid-template-rows: 435px;
     column-gap: 90px;
-    /*row-gap: 20px;*/
 }
 
 .pets-card {
@@ -451,4 +450,83 @@ ul {
     line-height: 23px;
     letter-spacing: 1px;
     color: #545454;
+}
+
+.donation-block {
+    height: 462px;
+    padding-top: 80px;
+    background: #F6F6F6;
+
+}
+
+.donation-container {
+    width: 915px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.donation-img {
+    background: url("../assets/img/donation-dog.png") no-repeat;
+    width: 550px;
+}
+
+.donation-text {
+    width: 380px;
+}
+
+.donation-heading {
+    font-size: 35px;
+    color: #545454;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: start;
+}
+
+.card-info {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #545454;
+    padding-top: 20px;
+}
+
+.card-btn {
+    padding-top: 30px;
+}
+
+.card-number {
+    line-height: 43px;
+    border-radius: 10px;
+    width: 349px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #545454;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-icon {
+    display: inline-block;
+    width: 30px;
+    transition: all 0.3s;
+    background-image: url(../assets/icons/credit-card.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-text {
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #B2B2B2;
 }
