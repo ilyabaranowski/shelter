@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../../styles/styles.css">
 </head>
 <body>
-<header class="header">
+<header class="header-white">
     <div class="container header-container">
-        <a href="#cozyhouse"><h1 class="logo-text">Cozy House</h1>
-            <p class="logo-text-small">Shelter for pets in Boston</p>
+        <a href="#cozyhouse"><h1 class="logo-text" id="logo-pets">Cozy House</h1>
+            <p class="logo-text-small" id="logo-small-pets">Shelter for pets in Boston</p>
         </a>
         <nav class="nav-container header-nav-container">
             <div class="burger-menu-icons">
@@ -21,10 +21,10 @@
                 <img class="burger-menu-close" src="../../assets/icons/Burger-close.svg" alt="X">
             </div>
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">About the shelter</a> </li>
-                <li><a href="#" class="nav-link">Our pets</a> </li>
-                <li><a href="#" class="nav-link">Help the shelter</a> </li>
-                <li><a href="#" class="nav-link">Contacts</a> </li>
+                <li><a href="#" class="nav-link nav-pets">About the shelter</a> </li>
+                <li><a href="#" class="nav-link nav-pets" >Our pets</a> </li>
+                <li><a href="#" class="nav-link nav-pets">Help the shelter</a> </li>
+                <li><a href="#" class="nav-link nav-pets">Contacts</a> </li>
             </ul>
         </nav>
         <svg class="burger-menu-btn" width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
@@ -37,9 +37,9 @@
 <main>
     <div class="pets-block" id="pets">
         <div class="container pets-container">
-            <h3 class="pets-text">Our friends who are looking for a house</h3>
-            <div class="slide-container">
-                <div class="slide slide-active">
+            <h3 class="pets-text">Our friends who <br> are looking for a house</h3>
+            <div class="slide-container" id="slide-pets-container">
+                <div class="slide slide-active" id="slide-grid">
                     <section class="pets-card">
                         <img class="pet-img" src="../../assets/img/pets-katrine.png" alt="Katrine">
                         <h5 class="animal-name">Katrine</h5>
@@ -98,11 +98,16 @@
                     </section>
                 </div>
             </div>
-            <div class="pets-slider-btn btn-left"></div>
-            <div class="pets-slider-btn btn-right"></div>
-            <div class="animal-btn">
-                <a class="primary-btn get-know-rest" href="#pets">Get to know the rest</a>
+            <div>
+                <div class="pets-slide-buttons">
+                    <div class="pets-slider-btn btn-left-left"></div>
+                    <div class="pets-slider-btn" id="arrow-left"></div>
+                    <div class="pets-slider-btn btn-num"><span class="pets-number-page">1</span></div>
+                    <div class="pets-slider-btn" id="arrow-right"></div>
+                    <div class="pets-slider-btn btn-right-right"></div>
+                </div>
             </div>
+
         </div>
     </div>
 </main>
