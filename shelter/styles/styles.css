@@ -73,6 +73,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.header-white {
+    background-color: #FFFFFF;
+    height: 120px;
+}
+
 h1 {
     font-size: 1em;
     font-weight: 400;
@@ -138,6 +143,10 @@ a {
     letter-spacing: 1px;
 }
 
+#logo-pets {
+    color: #545454;
+}
+
 .logo-text-small {
     font-size: 13px;
     color: #CDCDCD;
@@ -145,6 +154,11 @@ a {
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 2px;
+    padding-top: 10px;
+}
+
+#logo-small-pets {
+    color: var(--dark);
 }
 
 ul {
@@ -161,6 +175,10 @@ ul {
     font-family: 'Arial', sans-serif;
 }
 
+ul li a.nav-pets {
+    color: #545454;
+}
+
 .nav-link {
     display: inline-block;
     text-decoration: none;
@@ -168,10 +186,16 @@ ul {
     font-weight: 400;
     line-height: 24px;
     transition: all 0.2s;
+    font-size: 15px;
 }
 
 .header-nav-container li:hover a {
     border-bottom: 3px solid var(--primary);
+    color: #FAFAFA;
+}
+
+.header-nav-container li:hover a.nav-pets {
+    color: var(--dark);
 }
 
 .burger-menu-btn {
@@ -229,10 +253,15 @@ ul {
     font-size: 17px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .primary-btn:active {
     background: var(--primary-light);
+}
+
+.primary-btn:hover {
+    transform: scale(1.1);
 }
 
 .make-friend-btn {
@@ -303,6 +332,10 @@ ul {
     font-family: 'Arial', sans-serif;
 }
 
+#pets {
+    height: 1342px;
+}
+
 .pets-block {
     height: 877px;
     padding-top: 80px;
@@ -337,12 +370,24 @@ ul {
     justify-content: space-around;
 }
 
+#slide-pets-container {
+    width: 100%;
+    padding-top: 45px;
+}
+
 .slide {
     position: relative;
     display: grid;
-    grid-template-columns: 270px 270px 270px;
+    grid-template-columns: repeat(3, 270px);
     grid-template-rows: 435px;
     column-gap: 90px;
+}
+
+#slide-grid {
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 435px);
+    column-gap: 40px;
+    row-gap: 30px;
 }
 
 .pets-card {
@@ -381,6 +426,12 @@ ul {
     height: 52px;
 }
 
+.pets-btn-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
 .pets-slider-btn {
     width: 52px;
     height: 52px;
@@ -393,6 +444,19 @@ ul {
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center center;
+    cursor: pointer;
+}
+
+.pets-slider-btn:active {
+    background-color: var(--primary-light);
+}
+
+.pets-slide-buttons {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 52px);
+    grid-template-rows: 52px;
+    column-gap: 20px;
 }
 
 .btn-left {
@@ -405,6 +469,35 @@ ul {
     top: 41.1%;
     right: -8.9%;
     background-image:url("/assets/icons/Arrow-right.svg");
+}
+
+.btn-left-left {
+    background-image: url("/assets/icons/arrow-left-left.svg");
+}
+
+#arrow-left {
+    background-image: url("/assets/icons/arrow-left-pets.svg");
+}
+
+#arrow-right {
+    background-image: url("/assets/icons/arrow-right-pets.svg");
+}
+
+.btn-right-right {
+    background-image: url("/assets/icons/arrow-right-right.svg");
+}
+
+#number-of-pages-pets {
+    font-size: 20px;
+}
+
+#arrow-left-left,
+#arrow-left,
+#number-of-pages-pets,
+#arrow-right,
+#arrow-right-right {
+    position: relative;
+    background-size: auto;
 }
 
 .help-block {
@@ -442,6 +535,17 @@ ul {
     column-gap: 120px;
     row-gap: 55px;
     justify-content: center;
+}
+
+.help-action,
+.pets-card {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.help-action:hover,
+.pets-card:hover {
+    transform: scale(0.9);
 }
 
 .action-text {
