@@ -52,13 +52,15 @@ dd {
     --primary-light: #FDDCC4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Georgia', sans-serif;
     /*font-family: 'Arial', sans-serif;*/
     font-size: 16px;
     font-weight: 400;
-    scroll-behavior: smooth;
     position: relative;
 }
 
