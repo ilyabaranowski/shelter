@@ -253,10 +253,15 @@ ul li a.nav-pets {
     font-size: 17px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .primary-btn:active {
     background: var(--primary-light);
+}
+
+.primary-btn:hover {
+    transform: scale(1.1);
 }
 
 .make-friend-btn {
@@ -532,8 +537,15 @@ ul li a.nav-pets {
     justify-content: center;
 }
 
-.help-action {
+.help-action,
+.pets-card {
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.help-action:hover,
+.pets-card:hover {
+    transform: scale(0.9);
 }
 
 .action-text {
