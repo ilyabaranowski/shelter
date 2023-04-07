@@ -421,6 +421,12 @@ ul li a.nav-pets {
     height: 52px;
 }
 
+.pets-btn-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
 .pets-slider-btn {
     width: 52px;
     height: 52px;
@@ -433,12 +439,17 @@ ul li a.nav-pets {
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center center;
+    cursor: pointer;
+}
+
+.pets-slider-btn:active {
+    background-color: var(--primary-light);
 }
 
 .pets-slide-buttons {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 52px);
+    grid-template-columns: repeat(5, 52px);
     grid-template-rows: 52px;
     column-gap: 20px;
 }
@@ -469,6 +480,19 @@ ul li a.nav-pets {
 
 .btn-right-right {
     background-image: url("/assets/icons/arrow-right-right.svg");
+}
+
+#number-of-pages-pets {
+    font-size: 20px;
+}
+
+#arrow-left-left,
+#arrow-left,
+#number-of-pages-pets,
+#arrow-right,
+#arrow-right-right {
+    position: relative;
+    background-size: auto;
 }
 
 .help-block {
@@ -506,6 +530,10 @@ ul li a.nav-pets {
     column-gap: 120px;
     row-gap: 55px;
     justify-content: center;
+}
+
+.help-action {
+    cursor: pointer;
 }
 
 .action-text {
