@@ -462,29 +462,29 @@ ul li a.nav-pets {
 .btn-left {
     top: 41.1%;
     left: -8.9%;
-    background-image:url("/assets/icons/Arrow-left.svg");
+    background-image:url("../assets/icons/Arrow-left.svg");
 }
 
 .btn-right {
     top: 41.1%;
     right: -8.9%;
-    background-image:url("/assets/icons/Arrow-right.svg");
+    background-image:url("../assets/icons/Arrow-right.svg");
 }
 
 .btn-left-left {
-    background-image: url("/assets/icons/arrow-left-left.svg");
+    background-image: url("../assets/icons/arrow-left-left.svg");
 }
 
 #arrow-left {
-    background-image: url("/assets/icons/arrow-left-pets.svg");
+    background-image: url("../assets/icons/arrow-left-pets.svg");
 }
 
 #arrow-right {
-    background-image: url("/assets/icons/arrow-right-pets.svg");
+    background-image: url("../assets/icons/arrow-right-pets.svg");
 }
 
 .btn-right-right {
-    background-image: url("/assets/icons/arrow-right-right.svg");
+    background-image: url("../assets/icons/arrow-right-right.svg");
 }
 
 #number-of-pages-pets {
