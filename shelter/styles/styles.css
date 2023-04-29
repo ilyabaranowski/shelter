@@ -847,4 +847,7 @@ ul li a.nav-pets {
     .footer-container {
         justify-content: space-evenly;
     }
+    .footer-contacts {
+        padding-bottom: 0px;
+    }
 }
