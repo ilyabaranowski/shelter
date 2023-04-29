@@ -625,7 +625,7 @@ ul li a.nav-pets {
 }
 
 .footer-block {
-    height: 350px;
+    height: 100%;
     padding-top: 40px;
 }
 
@@ -634,10 +634,13 @@ ul li a.nav-pets {
     height: 100%;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
-
+.footer-contacts {
+    padding-bottom: 60px;
+}
 .footer-img {
     background: url("../assets/img/footer-puppy.png") no-repeat;
     width: 29%;
@@ -833,5 +836,15 @@ ul li a.nav-pets {
         width: 505px;
         height: 261px;
         margin-top: 60px;
+    }
+
+    .footer-img {
+        width: 300px;
+        height: 310px;
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        justify-content: space-evenly;
     }
 }
