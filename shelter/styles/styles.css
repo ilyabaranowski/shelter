@@ -361,7 +361,7 @@ ul li a.nav-pets {
 .slide-container {
     position: relative;
     padding-top: 60px;
-    width: 990px;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
@@ -498,7 +498,7 @@ ul li a.nav-pets {
 }
 
 .help-block {
-    height: 611px;
+    height: 100%;
     padding-top: 80px;
     background: #FFFFFF;
     display: flex;
@@ -515,23 +515,15 @@ ul li a.nav-pets {
 
 .howto-help-first {
     position: relative;
-    padding-top: 60px;
-    display: grid;
-    grid-template-columns: 82px 150px 60px 153px 101px;
-    grid-template-rows: 113px;
-    column-gap: 120px;
-    row-gap: 55px;
+    padding: 60px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.howto-help-last {
-    position: relative;
-    padding-top: 60px;
-    display: grid;
-    grid-template-columns: 89px 101px 165px 143px;
-    grid-template-rows: 113px;
-    column-gap: 120px;
-    row-gap: 55px;
-    justify-content: center;
+.help-action {
+    flex: 0 0 calc(18.66% - 1px);
+    padding: 10px;
 }
 
 .help-action,
@@ -554,13 +546,14 @@ ul li a.nav-pets {
 }
 
 .donation-block {
-    height: 462px;
+    height: 100%;
     padding-top: 80px;
     background: #F6F6F6;
+    padding-bottom: 110px;
 }
 
 .donation-container {
-    width: 915px;
+    width: 78.5%;
     height: 100%;
     position: relative;
     display: flex;
@@ -637,7 +630,7 @@ ul li a.nav-pets {
 }
 
 .footer-container {
-    width: 1200px;
+    width: 100%;
     height: 100%;
     position: relative;
     display: flex;
@@ -792,5 +785,53 @@ ul li a.nav-pets {
     .about-img {
         width: 43%;
         margin: 80px 0 100px 0;
-    };
+    }
+
+    .slide {
+        grid-template-columns: repeat(2, 270px);
+        column-gap: 40px;
+    }
+
+    .slide-container {
+        width: 100%;
+    }
+
+    div.slide-container > div > section:nth-child(3) {
+        display: none;
+    }
+
+    .btn-left {
+        left: -12.9%;
+    }
+
+    .btn-right {
+        right: -12.9%;
+    }
+
+    .help-block {
+        height: 100%;
+    }
+
+    .howto-help-first, .howto-help-last {
+        grid-template-columns: repeat(3, 170px);
+    }
+
+    .help-action {
+        flex: 0 0 calc(32.66% - 1px);
+    }
+
+    .donation-block {
+        padding-bottom: 100px;
+    }
+
+    .donation-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .donation-img {
+        width: 505px;
+        height: 261px;
+        margin-top: 60px;
+    }
 }
