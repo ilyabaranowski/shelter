@@ -228,7 +228,7 @@ ul li a.nav-pets {
 .heading-text-small {
     font-size: 15px;
     color: #CDCDCD;
-    width: 460px;
+    width: 81%;
     padding-top: 42px;
     position: relative;
     z-index: 1;
@@ -268,7 +268,7 @@ ul li a.nav-pets {
 
 .heading-img {
     background: url("../assets/img/start-screen-puppy.png") no-repeat;
-    width: 58%;
+    width: 127%;
     height: 100%;
 }
 
@@ -664,16 +664,6 @@ ul li a.nav-pets {
     letter-spacing: 1px;
 }
 
-/*span.contact-name:nth-child(2) {*/
-/*    display: inline-block;*/
-/*    padding-top: 40px;*/
-/*}*/
-
-/*span.location-name:nth-child(2) {*/
-/*    display: inline-block;*/
-/*    padding-top: 33px;*/
-/*}*/
-
 .contact-item {
     padding-top: 40px;
 }
@@ -752,7 +742,7 @@ ul li a.nav-pets {
 
     .heading-container {
         flex-direction: column;
-        width: 569px;
+        width: 100%;
     }
 
     .heading {
@@ -767,9 +757,10 @@ ul li a.nav-pets {
     }
 
     .heading-img{
-        width: 100%;
+        width: 80%;
+        height: 62%;
         margin: 100px 0 0 70px;
-        background-size: 100% 107%;
+        background-size: 102% 107%;
     }
 
     .about-block {
@@ -849,5 +840,45 @@ ul li a.nav-pets {
     }
     .footer-contacts {
         padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 747px) {
+    .nav-list{
+        display: none;
+    }
+
+    .burger-menu-icons {
+        display: block;
+    }
+
+    .header-container {
+        justify-content: space-around;
+    }
+
+    .nav-container {
+        width: 6%;
+    }
+
+    .heading-block {
+        height: 673px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 25px;
+        color: #FFF;
+        line-height: 32.5px;
+        letter-spacing: 1px;
+    }
+
+    .heading-text-small {
+        width: 53%;
+    }
+
+    .heading-img {
+        margin: 105px 0 0 40px;
+        width: 46%;
+        height: 44.5%;
     }
 }
