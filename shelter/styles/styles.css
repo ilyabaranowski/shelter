@@ -724,7 +724,7 @@ ul li a.nav-pets {
     .header,
     .heading-block,
     .footer {
-        background-size: 186%;
+        background-size: 198%;
     }
 
     .container {
@@ -737,7 +737,7 @@ ul li a.nav-pets {
 
     .heading-block {
         padding: 60px 0 0 0;
-        height: 1015px;
+        height: 1075px;
     }
 
     .heading-container {
@@ -844,8 +844,16 @@ ul li a.nav-pets {
 }
 
 @media (max-width: 747px) {
+    .header, .heading-block, .footer {
+        background-size: inherit;
+    }
+
     .nav-list{
         display: none;
+    }
+
+    .nav-container {
+        width: 10%;
     }
 
     .burger-menu-icons {
@@ -857,11 +865,11 @@ ul li a.nav-pets {
     }
 
     .nav-container {
-        width: 6%;
+        width: 10%;
     }
 
     .heading-block {
-        height: 673px;
+        height: 733px;
     }
 
     .heading {
@@ -873,12 +881,13 @@ ul li a.nav-pets {
     }
 
     .heading-text-small {
-        width: 53%;
+        width: 91%;
+        text-align: center;
     }
 
     .heading-img {
         margin: 105px 0 0 40px;
-        width: 46%;
-        height: 44.5%;
+        width: 81%;
+        height: 43.5%;
     }
 }
