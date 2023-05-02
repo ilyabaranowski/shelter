@@ -334,7 +334,8 @@ ul li a.nav-pets {
 }
 
 .pets-block {
-    height: 877px;
+    height: 100%;
+    padding-bottom: 100px;
     padding-top: 80px;
     background: #F6F6F6;
     display: flex;
@@ -724,7 +725,7 @@ ul li a.nav-pets {
     .header,
     .heading-block,
     .footer {
-        background-size: 198%;
+        background-size: 211%;
     }
 
     .container {
@@ -774,6 +775,10 @@ ul li a.nav-pets {
 
     .about-heading {
         padding-top: 80px;
+    }
+
+    .about-text {
+        width: 100%;
     }
 
     .about-img {
@@ -848,6 +853,10 @@ ul li a.nav-pets {
         background-size: inherit;
     }
 
+    .container {
+        max-width: 100%;
+    }
+
     .nav-list{
         display: none;
     }
@@ -877,7 +886,7 @@ ul li a.nav-pets {
         font-size: 25px;
         color: #FFF;
         line-height: 32.5px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
 
     .heading-text-small {
@@ -887,7 +896,161 @@ ul li a.nav-pets {
 
     .heading-img {
         margin: 105px 0 0 40px;
-        width: 81%;
-        height: 43.5%;
+        width: 260px;
+        height: 271px;
     }
+
+    .about-block {
+        height: 100%;
+    }
+
+    .about-heading {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-top: 42px;
+    }
+
+    .about-text {
+        width: 85%;
+    }
+
+    .about-img {
+        width: 260PX;
+        height: 353px;
+        margin: 42px 0 42px 0;
+        background-size: cover;
+    }
+
+    .about-first-text, .about-last-text {
+        text-align: justify;
+    }
+
+    .about-last-text {
+        padding-top: 22px;
+    }
+
+    .pets-block {
+        padding: 42px 0;
+    }
+
+    .pets-text, .help-text {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+    div.slide-container > div > section:nth-child(2n) {
+        display: none;
+    }
+
+    .slide-container {
+        padding-top: 42px;
+    }
+
+    .slide {
+        display: flex;
+    }
+
+    .animal-btn {
+        padding-bottom: 30px;
+    }
+
+    .btn-left {
+        left: 23.1%;
+        top: 78.1%;
+    }
+
+
+    .btn-right {
+        top: 78.1%;
+        right: 23.1%;
+}
+
+    .get-know-rest {
+        margin-top: 114px;
+    }
+
+    .howto-help-first {
+        padding: 42px 0;
+    }
+
+    .help-block {
+        padding-top: 42px;
+    }
+
+    .help-action {
+        flex: 0 0 calc(48.66% - 1px);
+    }
+
+    .action-text {
+        font-size: 15px;
+        line-height: 16px
+    }
+
+    .donation-container {
+        width: 93%;
+    }
+
+    .donation-block {
+        padding: 42px 0;
+    }
+
+    .donation-img {
+        width: 260px;
+        height: 135px;
+        background-size: cover;
+        margin-top: 42px;
+    }
+
+    .donation-text {
+        width: 100%;
+    }
+
+    .donation-heading {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .card-info {
+        letter-spacing: 0px;
+    }
+
+    .card-btn {
+        padding-top: 20px;
+    }
+
+    .card-number {
+        width: 100%;
+        letter-spacing: 0;
+        font-size: 15px;
+    }
+
+    .card-text {
+        text-align: justify;
+    }
+
+    .contact-text, .locations-text {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .footer-container {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-locations {
+        padding-top: 40px;
+    }
+
+    .footer-img {
+        margin-top: 40px;
+    }
+
 }
