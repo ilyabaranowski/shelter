@@ -1051,6 +1051,9 @@ ul li a.nav-pets {
 
     .footer-img {
         margin-top: 40px;
+        width: 260px;
+        background-size: cover;
+        height: 269px;
     }
 
 }
