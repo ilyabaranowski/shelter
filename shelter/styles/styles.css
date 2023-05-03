@@ -409,6 +409,7 @@ ul li a.nav-pets {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .pets-button {
@@ -846,6 +847,26 @@ ul li a.nav-pets {
     .footer-contacts {
         padding-bottom: 0px;
     }
+
+    #pets {
+        height: 100%;
+    }
+
+    #slide-pets-container {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    #slide-grid {
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: repeat(3, 435px);
+    }
+
+    #slide-grid > section:nth-child(3) {
+        display: block;
+    }
+
+
 }
 
 @media (max-width: 747px) {
@@ -952,10 +973,6 @@ ul li a.nav-pets {
 
     .slide {
         display: flex;
-    }
-
-    .animal-btn {
-        padding-bottom: 30px;
     }
 
     .btn-left {
