@@ -869,7 +869,7 @@ ul li a.nav-pets {
 
 }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
     .header, .heading-block, .footer {
         background-size: inherit;
     }
