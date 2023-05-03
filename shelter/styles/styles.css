@@ -892,6 +892,7 @@ ul li a.nav-pets {
 
     .header-container {
         justify-content: space-around;
+        max-width: 93%;
     }
 
     .nav-container {
@@ -1073,4 +1074,24 @@ ul li a.nav-pets {
         height: 269px;
     }
 
+    #slide-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slide-grid > section:nth-child(2n) {
+        display: block;
+    }
+
+    #slide-grid > section:nth-child(n+4) {
+        display: none;
+    }
+
+    .pets-btn-container {
+        padding-top: 42px;
+    }
+
+    .pets-slide-buttons {
+        column-gap: 10px;
+    }
 }
