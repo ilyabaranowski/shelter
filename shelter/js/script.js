@@ -14,12 +14,4 @@ document.querySelectorAll('.nav-link').forEach(nav =>
         navMenu.classList.remove('active');
     }))
 
-document.querySelector('body').addEventListener('wheel', preventScroll, {passive: false});
-
-function preventScroll(event){
-    event.preventDefault();
-    event.stopPropagation();
-
-    return false;
-}
-
+//
