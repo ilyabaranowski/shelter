@@ -14,4 +14,9 @@ document.querySelectorAll('.nav-link').forEach(nav =>
         navMenu.classList.remove('active');
     }))
 
-//
+//slider
+
+// import pets from '../js/pets.json' assert { type: 'json'};
+let cardsCollection = document.getElementsByClassName('pets-card');
+
+
