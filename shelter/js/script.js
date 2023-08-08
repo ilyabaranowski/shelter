@@ -14,12 +14,9 @@ document.querySelectorAll('.nav-link').forEach(nav =>
         navMenu.classList.remove('active');
     }))
 
-document.querySelector('body').addEventListener('wheel', preventScroll, {passive: false});
+//slider
 
-function preventScroll(event){
-    event.preventDefault();
-    event.stopPropagation();
+// import pets from '../js/pets.json' assert { type: 'json'};
+let cardsCollection = document.getElementsByClassName('pets-card');
 
-    return false;
-}
 

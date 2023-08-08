@@ -202,6 +202,9 @@ ul li a.nav-pets {
     transition: all 0.2s;
     font-size: 15px;
 }
+.nav-item:nth-child(1) > a {
+    border-bottom: 3px solid var(--primary);
+}
 
 .header-nav-container li:hover a {
     border-bottom: 3px solid var(--primary);
@@ -943,6 +946,7 @@ ul li a.nav-pets {
     .burger.active {
         transform: rotate(90deg);
         z-index: 3;
+        position: fixed;
     }
 
     .header-container {
